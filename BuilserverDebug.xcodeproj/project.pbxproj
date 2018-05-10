@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F54F5F720A46548004DD9FD /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F54F5EC20A4646C004DD9FD /* Crashlytics.framework */; };
+		9F54F5F820A46548004DD9FD /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F54F5EB20A4646C004DD9FD /* Fabric.framework */; };
 		9F945061208A091F00360461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F945060208A091F00360461 /* AppDelegate.swift */; };
 		9F945063208A091F00360461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F945062208A091F00360461 /* ViewController.swift */; };
 		9F945066208A091F00360461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F945064208A091F00360461 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F54F5EB20A4646C004DD9FD /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		9F54F5EC20A4646C004DD9FD /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		9F94505D208A091F00360461 /* BuilserverDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuilserverDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F945060208A091F00360461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F945062208A091F00360461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F54F5F720A46548004DD9FD /* Crashlytics.framework in Frameworks */,
+				9F54F5F820A46548004DD9FD /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F54F5EA20A4646B004DD9FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F54F5EC20A4646C004DD9FD /* Crashlytics.framework */,
+				9F54F5EB20A4646C004DD9FD /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F945054208A091F00360461 = {
 			isa = PBXGroup;
 			children = (
 				9F94505F208A091F00360461 /* BuilserverDebug */,
 				9F94505E208A091F00360461 /* Products */,
+				9F54F5EA20A4646B004DD9FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +90,7 @@
 				9F945059208A091F00360461 /* Sources */,
 				9F94505A208A091F00360461 /* Frameworks */,
 				9F94505B208A091F00360461 /* Resources */,
+				9F54F5E420A4628C004DD9FD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +146,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F54F5E420A4628C004DD9FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 3d8dfd7dd074146b54ccdecb1cba199c3cb4cb83 f88b42289fccb9c5dcfc00a6a860a54779e955f0f2c046941ba2d3c375ae3e6b";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F945059208A091F00360461 /* Sources */ = {
@@ -282,6 +315,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MNDLM8Y4HQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuilserverDebug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,6 +340,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MNDLM8Y4HQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuilserverDebug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
