@@ -14,12 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let env = ProcessInfo.processInfo.environment
-        let apiSwitch = Bool(env["API_SWITCH"] ?? "") ?? false
-        var msg = "API_SWITCH: \(apiSwitch)\n\n"
-        for (key, val) in env {
-            msg += "\(key): \(val)\n\n"
-        }
+        let userVar = Bundle.main.infoDictionary?["API_SWITCH"] ?? ""
+        let msg = "API_SWITCH: \(userVar)\n\n"
         textView.text = msg
     }
 
