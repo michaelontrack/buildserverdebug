@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let userVar = Bundle.main.infoDictionary?["API_SWITCH"] ?? ""
         let msg = "API_SWITCH: \(userVar)\n\n"
-        textView.text = msg
+        textView.text = msg + "\(Bundle.main.infoDictionary)"
     }
 
 }
