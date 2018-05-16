@@ -14,6 +14,7 @@
 		9F945066208A091F00360461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F945064208A091F00360461 /* Main.storyboard */; };
 		9F945068208A092100360461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F945067208A092100360461 /* Assets.xcassets */; };
 		9F94506B208A092100360461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F945069208A092100360461 /* LaunchScreen.storyboard */; };
+		9FC68A5620AC1C5100584CCD /* NSDate+SAMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC68A5520AC1C5100584CCD /* NSDate+SAMAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		9F945067208A092100360461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F94506A208A092100360461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F94506C208A092100360461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC68A5320AC1C5100584CCD /* BuilserverDebug-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuilserverDebug-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FC68A5420AC1C5100584CCD /* NSDate+SAMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+SAMAdditions.h"; sourceTree = "<group>"; };
+		9FC68A5520AC1C5100584CCD /* NSDate+SAMAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SAMAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +76,13 @@
 			children = (
 				9F945060208A091F00360461 /* AppDelegate.swift */,
 				9F945062208A091F00360461 /* ViewController.swift */,
+				9FC68A5420AC1C5100584CCD /* NSDate+SAMAdditions.h */,
+				9FC68A5520AC1C5100584CCD /* NSDate+SAMAdditions.m */,
 				9F945064208A091F00360461 /* Main.storyboard */,
 				9F945067208A092100360461 /* Assets.xcassets */,
 				9F945069208A092100360461 /* LaunchScreen.storyboard */,
 				9F94506C208A092100360461 /* Info.plist */,
+				9FC68A5320AC1C5100584CCD /* BuilserverDebug-Bridging-Header.h */,
 			);
 			path = BuilserverDebug;
 			sourceTree = "<group>";
@@ -113,6 +120,7 @@
 				TargetAttributes = {
 					9F94505C208A091F00360461 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -168,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC68A5620AC1C5100584CCD /* NSDate+SAMAdditions.m in Sources */,
 				9F945063208A091F00360461 /* ViewController.swift in Sources */,
 				9F945061208A091F00360461 /* AppDelegate.swift in Sources */,
 			);
@@ -195,6 +204,88 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9F54F5F920A4765C004DD9FD /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Adhoc;
+		};
+		9F54F5FA20A4765C004DD9FD /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_SWITCH = 0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = MNDLM8Y4HQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BuilserverDebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.otrl.BuilserverDebug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9ef5c73-1e95-43f5-a0a9-4c4fa3ce8cee";
+				PROVISIONING_PROFILE_SPECIFIER = buildserverdebug_adhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "BuilserverDebug/BuilserverDebug-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Adhoc;
+		};
 		9F94506D208A092100360461 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,7 +403,9 @@
 		9F945070208A092100360461 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_SWITCH = 0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MNDLM8Y4HQ;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -328,6 +421,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9b4199b4-c1c5-4f8e-91da-3c09e5745458";
 				PROVISIONING_PROFILE_SPECIFIER = buildserverdebug_dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "BuilserverDebug/BuilserverDebug-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,7 +431,9 @@
 		9F945071208A092100360461 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_SWITCH = 0;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = MNDLM8Y4HQ;
@@ -353,6 +450,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "e9ef5c73-1e95-43f5-a0a9-4c4fa3ce8cee";
 				PROVISIONING_PROFILE_SPECIFIER = buildserverdebug_adhoc;
+				SWIFT_OBJC_BRIDGING_HEADER = "BuilserverDebug/BuilserverDebug-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +464,7 @@
 			buildConfigurations = (
 				9F94506D208A092100360461 /* Debug */,
 				9F94506E208A092100360461 /* Release */,
+				9F54F5F920A4765C004DD9FD /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -375,6 +474,7 @@
 			buildConfigurations = (
 				9F945070208A092100360461 /* Debug */,
 				9F945071208A092100360461 /* Release */,
+				9F54F5FA20A4765C004DD9FD /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
