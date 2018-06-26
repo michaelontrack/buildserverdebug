@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let userVar = Bundle.main.infoDictionary?["API_SWITCH"] ?? ""
-        let msg = "API_SWITCH: \(userVar)\n\n"
+        let switchSettingVal = Bundle.main.infoDictionary?["API_SWITCH"] ?? ""
+        let switchSettingStr = NSString(format: "%@", switchSettingVal as! CVarArg)
+        
+        let msg = "API_SWITCH: \(switchSettingStr.boolValue)\n\n"
         textView.text = msg + "\(Bundle.main.infoDictionary)"
     }
 

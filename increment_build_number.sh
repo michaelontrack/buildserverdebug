@@ -17,4 +17,4 @@ done
 
 # Committing build number increment
 git commit -a -m "$INC_MSG"
-git push origin $BRANCH
+git push origin
